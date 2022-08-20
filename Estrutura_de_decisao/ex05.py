@@ -5,13 +5,13 @@
 
 print('Notas do Semestre: ')
 
-n1 = input('Digite a primeira nota: \n')
-n2 = input('Digite a segunda nota: \n')
+n1 = float(input('Digite a primeira nota: \n'))
+n2 = float(input('Digite a segunda nota: \n'))
 
 
-if (float(n1) >= 7):
+if n1 >= 7:
     print("Aprovado")
-elif (float(n1) == 10):
+elif n1 == 10:
     print("Aprovado com Distinção")
 else:
     print("Reprovado")
