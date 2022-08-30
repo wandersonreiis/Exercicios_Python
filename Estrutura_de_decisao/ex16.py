@@ -9,13 +9,26 @@
 
 
 
+import math
 
 A = float(input('Digite o Valor de A: '))
-for i in range(0):
+
+for i in range(0,1000):
     if int(A) == 0:
         print('Não é uma Equação do segundo Grau')
-        break
-B = float(input('Digite o Valor de B: '))
-C = float(input('Digite o Valor de C: '))
+    else:
+        B = float(input('Digite o Valor de B: '))
+        C = float(input('Digite o Valor de C: '))
+    break
 
-delta = A**2 + B + C 
+DELTA = B**2 - 4*A*C
+D1 = (-B + math.sqrt(DELTA)) / 2*A
+D2 = (-B - math.sqrt(DELTA)) / 2*A
+
+for i in range(-1,-10000):
+    if DELTA < 0 :
+        print('A equação não possui raizes reais')
+
+
+print(DELTA)
+print(D1)
